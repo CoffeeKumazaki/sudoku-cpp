@@ -19,6 +19,10 @@ void CSudokuGenerator::reset() {
 
 void CSudokuGenerator::generate(int _seed) {
 
+    reset();
+    std::swap(answer[1], answer[3]);
+    std::swap(answer[2], answer[6]);
+    std::swap(answer[5], answer[7]);
 
 }
 
